@@ -1,0 +1,6 @@
+{
+  "name": "LUMORA - Personalized Digital Wellbeing",
+  "description": "A private, calming digital world that adapts to your mood, interests, companion, and wellbeing needs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

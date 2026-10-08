@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --color-lumora-bg: #0a0d18;
+  --color-lumora-surface: #12182b;
+  --color-lumora-surface-muted: #1a233e;
+  --color-lumora-text: #f1f5f9;
+  --color-lumora-text-muted: #c7d2fe;
+  --color-lumora-accent: #818cf8;
+  --color-lumora-accent-hover: #6366f1;
+  --color-lumora-border: #253258;
+  --color-lumora-glow: rgba(129, 140, 248, 0.25);
+}
+
+[data-theme="sunset"] {
+  --color-lumora-bg: #1c1017;
+  --color-lumora-surface: #2b1823;
+  --color-lumora-surface-muted: #3d2232;
+  --color-lumora-text: #fff1f2;
+  --color-lumora-text-muted: #fecdd3;
+  --color-lumora-accent: #fb7185;
+  --color-lumora-accent-hover: #f43f5e;
+  --color-lumora-border: #4c263c;
+  --color-lumora-glow: rgba(251, 113, 133, 0.25);
+}
+
+[data-theme="nature"] {
+  --color-lumora-bg: #0c1813;
+  --color-lumora-surface: #14271f;
+  --color-lumora-surface-muted: #1d382d;
+  --color-lumora-text: #f0fdf4;
+  --color-lumora-text-muted: #bbf7d0;
+  --color-lumora-accent: #34d399;
+  --color-lumora-accent-hover: #10b981;
+  --color-lumora-border: #244839;
+  --color-lumora-glow: rgba(52, 211, 153, 0.25);
+}
+
+[data-theme="warm"] {
+  --color-lumora-bg: #1c120a;
+  --color-lumora-surface: #2a1a0f;
+  --color-lumora-surface-muted: #3d2516;
+  --color-lumora-text: #fffbeb;
+  --color-lumora-text-muted: #fde68a;
+  --color-lumora-accent: #f59e0b;
+  --color-lumora-accent-hover: #d97706;
+  --color-lumora-border: #4d301b;
+  --color-lumora-glow: rgba(245, 158, 11, 0.25);
+}
+
+[data-theme="rain"] {
+  --color-lumora-bg: #0b1319;
+  --color-lumora-surface: #121f28;
+  --color-lumora-surface-muted: #1a2b38;
+  --color-lumora-text: #f1f5f9;
+  --color-lumora-text-muted: #94a3b8;
+  --color-lumora-accent: #38bdf8;
+  --color-lumora-accent-hover: #0284c7;
+  --color-lumora-border: #23394a;
+  --color-lumora-glow: rgba(56, 189, 248, 0.25);
+}
+
+[data-theme="soft"] {
+  --color-lumora-bg: #0c1622;
+  --color-lumora-surface: #132234;
+  --color-lumora-surface-muted: #1a2f47;
+  --color-lumora-text: #f0f9ff;
+  --color-lumora-text-muted: #bae6fd;
+  --color-lumora-accent: #38bdf8;
+  --color-lumora-accent-hover: #0ea5e9;
+  --color-lumora-border: #244161;
+  --color-lumora-glow: rgba(56, 189, 248, 0.25);
+}
+
+body {
+  background-color: var(--color-lumora-bg);
+  color: var(--color-lumora-text);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
